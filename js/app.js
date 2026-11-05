@@ -4,13 +4,14 @@
  */
 
 //Deklarasikan endpoint API 
-
+const API_URL = 'api/mahasiswa.php';
 // 1. Seleksi Elemen DOM Utama
 const tabelBody = document.getElementById('tabel-body-mahasiswa');
 const inputSearch = document.getElementById('input-search');
 const totalBadge = document.getElementById('total-mahasiswa-badge');
-
-
+const totalInfo = document.getElementById('total-mahasiswa-info');
+const formTambah = document.getElementById('form-tambah-mahasiswa');
+const alertBox = document.getElementById('alert-box');
 // Helper: Menampilkan Pesan Notifikasi Dinamis
 function showAlert(message, type = 'success') {
    
